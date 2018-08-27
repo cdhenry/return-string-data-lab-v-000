@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <% @products.each do |product| %>
   <%= render partial: "product", locals: {product: product} %>
 <% end %>
@@ -19,3 +20,9 @@ $(function () {
   });
 });
 </script>
+=======
+<h1><%= product.id %>: <%= product.name %></h2>
+<div id="body-<%= product.id %>"><%= truncate product.description %></div>
+
+<button class="js-more" data-id="<%= product.id %>">More...</button>
+>>>>>>> d0c6ae59d9b5681ffa5fc10749126538e4010f0b
